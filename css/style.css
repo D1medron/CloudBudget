@@ -293,31 +293,33 @@
 }
 
 .application {
-  height: 500px;
   background: #ED4C5C;
+  color: #FFFFFF;
+}
+.application__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding: 100px 0;
+  z-index: 0;
 }
-.application__text {
-  width: 445px;
-  margin: 60px;
-  text-align: left;
-  margin: 100px 165px;
+.application__content {
+  margin: 60px 80px 60px 0;
 }
-.application__text h2 {
+.application__title {
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
   line-height: 43px;
-  color: #FFFFFF;
+  text-align: left;
 }
-.application__text p {
+.application__desc {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 140%;
-  color: #FFFFFF;
   margin: 40px 0;
+  text-align: justify;
 }
 .application__list {
   list-style: none;
@@ -328,26 +330,28 @@
 .application__item:not(:last-child) {
   margin-right: 20px;
 }
+.application__box {
+  align-self: center;
+}
 .application__slider {
+  position: relative;
+  z-index: 5;
+}
+.application__wrapper {
+  width: 445px;
+  height: 320px;
+}
+.application__wrapper-2 {
   position: absolute;
-  height: 500px;
+  left: -60px;
+  top: 20px;
+  z-index: -1;
 }
-.application .slider-1 {
-  position: relative;
-  left: 70%;
-  top: 20%;
-  z-index: 1;
-}
-.application .slider-2 {
-  position: relative;
-  left: 28%;
-  top: 15%;
-  z-index: 0;
-}
-.application .slider-3 {
-  position: relative;
-  left: 10%;
-  top: 15%;
+.application__wrapper-3 {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: -1;
 }
 
 .contact {
