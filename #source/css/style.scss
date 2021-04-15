@@ -73,11 +73,6 @@
 		content: url(/img/emojione-flag-for-flag-united-states.svg);
 		left: 15%;
 		bottom: -10px;
-	// display: inline;
-	// background-image: url(/img/emojione-flag-for-flag-united-states.svg);
-	// background-size: 32px 32px;
-	//  right: 20%;
-	//  top: 8%;
   }
 }
 
@@ -278,36 +273,29 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		gap: 25px;
 	}
 	&__item {
 		width: 255px;
 		height: 226px;
+		position: relative;
+	}
+	&__wrapper {
+		position: absolute;
+		display: grid;
+		justify-content: center;
+		align-items: center;
+		width: 80px;
+		height: 80px;
+		top: 65px;
+		left: 90px;
 	}
 	&__item span {
-		position: absolute;
 		font-style: normal;
 		font-weight: bold;
 		font-size: 100px;
 		line-height: 120px;
 		color: rgba(16, 16, 16, 0.08);
-	}
-	&__item img {
-		position: relative;
-		top: 25%;
-		left: 8%;
-	}
-	&__item-img-1 {
-		margin-bottom: 50px;
-	}
-	&__item-img-2 {
-		margin-bottom: 65px;
-	}
-	&__item-img-3 {
-		margin-bottom: 60px;
-	}
-	&__item-img-4 {
-		padding: 10px;
-		margin-bottom: 55px;
 	}
 	&__item h3 {
 		font-style: normal;
@@ -315,14 +303,13 @@
 		font-size: 18px;
 		line-height: 22px;
 		color: #101010;
-		padding-left: 35px;
+		margin-top: 20px;
 	}
 	&__item p {
 		font-style: normal;
 		font-weight: normal;
 		font-size: 12px;
 		line-height: 14px;
-		padding-left: 35px;
 		margin-top: 10px;
 	}
 }
