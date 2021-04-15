@@ -20,7 +20,7 @@
 }
 
 .header {
-	background-image: url(/img/bg.png);
+	background-image: url(../img/bg.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: white;
@@ -45,7 +45,7 @@
 		}
 		&::before {
 			position: absolute;
-			content: url(/img/dashicons-cloud.svg);
+			content: url(../img/dashicons-cloud.svg);
 			left: -30px;
 			top: -6px;
 		}
@@ -82,7 +82,7 @@
 	}
 	&__lang-text::before {
 		position: absolute;
-		content: url(/img/emojione-flag-for-flag-united-states.svg);
+		content: url(../img/emojione-flag-for-flag-united-states.svg);
 		right: 25px;
 		bottom: -10px;
 	}
@@ -183,7 +183,7 @@
 	}
 	& > img::before {
 		position: relative;
-		content: url(/img/play-button.png);
+		content: url(../img/play-button.png);
 		top: 50%;
 	}
 }
@@ -250,7 +250,7 @@
 		left: 8%;
 	}
 	&__text-card h3 {
-	 	font-style: normal;
+		font-style: normal;
 		font-weight: bold;
 		font-size: 18px;
 		line-height: 22px;

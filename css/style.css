@@ -20,7 +20,7 @@
 }
 
 .header {
-  background-image: url(/img/bg.png);
+  background-image: url(../img/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -47,7 +47,7 @@
 }
 .header__logo::before {
   position: absolute;
-  content: url(/img/dashicons-cloud.svg);
+  content: url(../img/dashicons-cloud.svg);
   left: -30px;
   top: -6px;
 }
@@ -83,7 +83,7 @@
 }
 .header__lang-text::before {
   position: absolute;
-  content: url(/img/emojione-flag-for-flag-united-states.svg);
+  content: url(../img/emojione-flag-for-flag-united-states.svg);
   right: 25px;
   bottom: -10px;
 }
@@ -182,7 +182,7 @@
 }
 .overview > img::before {
   position: relative;
-  content: url(/img/play-button.png);
+  content: url(../img/play-button.png);
   top: 50%;
 }
 
