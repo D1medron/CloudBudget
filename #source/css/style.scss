@@ -190,11 +190,11 @@
 }
 
 .features { 
-	margin-bottom: 50px;
 	background-color: #FAFAFA;
-	padding-bottom: 100px;
-	padding-top: 80px;
-	& h2 {
+	&__inner {
+		padding: 70px 0;
+	}
+	&__title {
 		padding-bottom: 40px;
 		font-style: normal;
 		font-weight: 600;
@@ -203,68 +203,40 @@
 	}
 	&__cards {
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 	}
 	&__card {
 		width: 350px;
 		height: 355px;
-		margin: 30px;
+		position: relative;
 	}
-	&__card-1 img {
+	&__card-content {
 		position: absolute;
-	}
-	&__text-card-1 {
-		position: relative;
 		background-color: white;
-		width: 293px;
-		height: 198px;
+		width: 300px;
+		height: 200px;
 		border-radius: 8px;
 		box-shadow: 0 0 10px black;
-		bottom: 25%;
-		left: 8%;
+		bottom: 50px;
+		left: 25px;
+		padding: 35px;
 	}
-	&__card-2 img {
-		position: absolute;
-	}
-	&__text-card-2 {
-		position: relative;
-		background-color: white;
-		width: 293px;
-		height: 198px;
-		border-radius: 8px;
-		box-shadow: 0 0 10px black;
-		bottom: 25%;
-		left: 8%;
-	}
-	&__card-3 img {
-	position: absolute;
-	}
-	&__text-card-3 {
-		position: relative;
-		background-color: white;
-		width: 293px;
-		height: 198px;
-		border-radius: 8px;
-		box-shadow: 0 0 10px black;
-		bottom: 25%;
-		left: 8%;
-	}
-	&__text-card h3 {
+	&__card-title {
 		font-style: normal;
 		font-weight: bold;
 		font-size: 18px;
 		line-height: 22px;
-		padding: 33px 20px 20px;
+		margin-bottom: 15px;
 	}
-	&__text-card p {
+	&__card-text {
 		font-style: normal;
 		font-weight: normal;
 		font-size: 12px;
 		line-height: 150%;
 		padding-bottom: 20px;
 	}
-	&__text-card a {
+	&__more {
 		font-style: normal;
 		font-weight: bold;
 		font-size: 12px;
