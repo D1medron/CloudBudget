@@ -246,21 +246,20 @@
 }
 
 .technology {
-	height: 400px;
-	& h2 {
+	&__inner {
+		padding: 70px 0 120px;
+	}
+	&__title {
 		padding-bottom: 50px;
-		padding-top: 20px;
 	}
 	&__list {
 		list-style: none;
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 		gap: 25px;
 	}
 	&__item {
-		width: 255px;
-		height: 226px;
 		position: relative;
 	}
 	&__wrapper {
@@ -271,16 +270,16 @@
 		width: 80px;
 		height: 80px;
 		top: 65px;
-		left: 90px;
+		left: 50px;
 	}
-	&__item span {
+	&__text {
 		font-style: normal;
 		font-weight: bold;
 		font-size: 100px;
 		line-height: 120px;
 		color: rgba(16, 16, 16, 0.08);
 	}
-	&__item h3 {
+	&__subtitle {
 		font-style: normal;
 		font-weight: bold;
 		font-size: 18px;
@@ -288,7 +287,7 @@
 		color: #101010;
 		margin-top: 20px;
 	}
-	&__item p {
+	&__desc {
 		font-style: normal;
 		font-weight: normal;
 		font-size: 12px;
