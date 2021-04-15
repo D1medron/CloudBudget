@@ -10,8 +10,8 @@
 }
 
 .body {
-	max-width: 1440px;
 	text-align: center;
+	margin: 0 auto;
 }
 
 .container {
@@ -24,7 +24,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: white;
-	height: 100vh;
+	height: 782px;
 	&__top {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);		
@@ -99,6 +99,34 @@
 			border-color: white;
 		}
 	}
+	&__content {
+		margin-top: 140px;
+		&-title {
+			margin-bottom: 40px;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 72px;
+			line-height: 86px;
+			text-transform: uppercase;
+		}
+		&-text{
+			font-style: normal;
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 150%;
+		}
+		&-btn {
+			margin-top: 40px;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 17px;
+			padding: 17px 50px;
+			background-color: white;
+			color: #ED4C5C;
+			border: none;
+		}
+	}
 }
 
 .btn {
@@ -106,37 +134,6 @@
 	border: 1px solid;
 	border-radius: 6px;
 }
-
-.header__content {
-	margin-top: 140px;
-	&-title {
-		margin-bottom: 40px;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 72px;
-		line-height: 86px;
-		text-transform: uppercase;
-	}
-	&-text{
-		font-style: normal;
-		font-weight: 600;
-		font-size: 24px;
-		line-height: 150%;
-	}
-	&-btn {
-		margin-top: 40px;
-		font-style: normal;
-		font-weight: 600;
-		font-size: 14px;
-		line-height: 17px;
-		padding: 17px 50px;
-		background-color: white;
-		color: #ED4C5C;
-		border: none;
-	}
-}
-
-
 
 .visually-hidden {
 	position: absolute;
@@ -150,41 +147,45 @@
 }
 
 .overview {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	height: 500px;
-	&__text {
-		width: 445px;
-		text-align: left;
-		height: 250px;
-		margin: 140px 92px 110px 165px;
+	&__inner {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 200px;
+		margin: 120px auto;
 	}
-	&__text h3 {
+	&__content {
+		align-self: center;
+		text-align: justify;
+	}
+	&__title {
 		font-style: normal;
 		font-weight: 600;
 		font-size: 36px;
 		line-height: 43px;
 		margin-bottom: 25px;
 	}
-	&__text a {
+	&__more {
 		color: #ED4C5C;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 14px;
 		line-height: 140%;
 	}
-	&__text p {
+	&__text {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 140%;
 		margin-bottom: 20px;
 	}
-	& > img {
-		margin: 95px;
-		position: absolute;
-		left: 50%;
-	}
-	& > img::before {
+	&__video {
 		position: relative;
-		content: url(../img/play-button.png);
-		top: 50%;
+	}
+	&__video-wrapper::before {
+		position: absolute;
+		content: url(../img/play-button.svg);
+		top: 125px;
+		left: -25px;
 	}
 }
 
