@@ -191,17 +191,17 @@
 		line-height: 43px;
 	}
 	&__cards {
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	&__card {
-	  width: 350px;
-	  height: 355px;
-	  margin: 30px;
+		width: 350px;
+		height: 355px;
+		margin: 30px;
 	}
 	&__card-1 img {
-	  position: absolute;
+		position: absolute;
 	}
 	&__text-card-1 {
 		position: relative;
@@ -399,15 +399,12 @@
 		grid-template-columns: repeat(10, 1fr);
 		grid-template-rows: repeat(4, 1fr);
 		gap: 20px;
-		// justify-content: center;
-		// align-items: center;
 		text-align: left;
 		margin: 150px 80px;
 		& input {
 			border: 1px solid #333333;
 			border-radius: 6px;
 			padding: 15px 20px;
-			// padding: 20px 70px 20px 20px;
 		}
 		& input:nth-of-type(1) {
 			grid-column: 1/6;
@@ -433,49 +430,32 @@
 			grid-row: 4/5;
 			border: 1.5px solid #ED4C5C;
 			border-radius: 6px;
-			// padding: 10px 10px;
-			// padding: 20px 30px 20px 30px;
 			background-color: #ED4C5C;
 			color: #fff;
 			text-transform: uppercase;
 			text-align: center;
-			// margin-top: 24px;
 		}
 
 	}
 }
-// 	.form__tel {
-// 		grid-column: 1/5;
-// 		grid-row: 2/3;
-// 		& input{
-// 			border: 1px solid #333333;
-// 			border-radius: 6px;
-// 			padding: 20px 330px 20px 20px;
-// 			margin-top: 24px;
-// 		}
-// 	}
-// 	.form__services {
-// 		grid-column: 1/5;
-// 		grid-row: 3/4;
-// 		& select {
-// 			border: 1px solid #333333;
-// 			padding: 20px 364px 20px 20px;
-// 			margin-top: 24px;
-// 		}
-// 	}
-// }
 
+.container {
+	width: 1110px;
+	margin: 0 auto;
+}
+.footer__inner {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr 1fr;
+	align-items: line-height;
+
+}
 .main-footer {
 	background-color: #FAFAFA;
 	margin-top: 50px;
 	padding-top: 100px;
 	height: 435px;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 1fr 1fr;
-	align-items: line-height;
 	& section {
-		// margin: 100px 60px;
 		text-align: left;
 	}
 	& h2 {
